@@ -4,12 +4,12 @@ import { ErrorPage } from './component/pages/error/ErrorPage';
 
 const routes = [
   {
-    path: '/',
+    path: 'odin-shopping-cart/',
     element: <HomePage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: 'shop',
+    path: 'odin-shopping-cart/shop',
     element: <ShopPage />,
   },
 ];

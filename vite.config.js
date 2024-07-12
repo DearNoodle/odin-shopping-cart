@@ -8,7 +8,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './tests/setup.js',
   },
-  base: '/',
+  base: '/odin-shopping-cart/',
   /*
   (eg. epository is at https://github.com/<USERNAME>/<REPO>),
   then set

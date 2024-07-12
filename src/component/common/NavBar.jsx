@@ -7,8 +7,8 @@ export function NavBar() {
 
   return (
     <nav>
-      <Link to='/'>Home</Link>
-      <Link to='/shop'>Shop</Link>
+      <Link to='/odin-shopping-cart/'>Home</Link>
+      <Link to='/odin-shopping-cart/shop'>Shop</Link>
       <div onClick={() => setIsCartOpen(!isCardOpen)}>
         <span className='iconify cart-icon' data-icon='mdi-cart'></span>
       </div>
