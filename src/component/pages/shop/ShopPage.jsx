@@ -20,9 +20,9 @@ export function ShopPage() {
         const product = await fetchProduct(`https://fakestoreapi.com/products/${i}`);
         product.amount = 1;
         fetchedProducts.push(product);
-        setProducts(fetchedProducts);
-        setIsLoading(false);
+        setProducts(() => fetchedProducts);
       }
+      setIsLoading(false);
     };
 
     fetchProducts();
