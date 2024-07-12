@@ -1,3 +1,3 @@
-# React Template
+# Shopping Cart
 
-[name](link)
+[Website Link](https://dearnoodle.github.io/odin-shopping-cart/)
