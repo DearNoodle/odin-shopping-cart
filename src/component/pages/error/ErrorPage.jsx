@@ -1,3 +1,3 @@
 export function ErrorPage() {
-  return <p>This is Error Page</p>;
+  return <p>This is an Error Page</p>;
 }

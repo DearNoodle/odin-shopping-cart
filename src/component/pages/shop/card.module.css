@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+  background-color: white;
+  color: black;
+  gap: 5px;
+}
+
+.image {
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 20px;
+  max-width: 250px;
+}
+
+.price {
+  font-size: 18px;
+  color: #ddcc66;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 12px;
+  max-height: 80px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.buy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 30px;
+}
