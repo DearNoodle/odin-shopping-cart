@@ -4,7 +4,7 @@ import { ShoppingCart } from '../../common/ShoppingCart';
 import { CartOpenContext } from '../../../App';
 import React, { useContext } from 'react';
 export function HomePage() {
-  const [isCardOpen] = useContext(CartOpenContext);
+  const { isCardOpen } = useContext(CartOpenContext);
   return (
     <>
       <NavBar></NavBar>

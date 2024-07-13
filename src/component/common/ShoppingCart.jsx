@@ -3,8 +3,8 @@ import React, { useContext } from 'react';
 import { CartOpenContext, CartItemContext } from '../../App';
 
 export function ShoppingCart() {
-  const [, setIsCartOpen] = useContext(CartOpenContext);
-  const [cartItem] = useContext(CartItemContext);
+  const { setIsCartOpen } = useContext(CartOpenContext);
+  const { cartItem } = useContext(CartItemContext);
 
   function handleModalClick(event) {
     if (event.target === event.currentTarget) {
@@ -40,7 +40,7 @@ export function ShoppingCart() {
 }
 
 function CartItem({ item }) {
-  const [cartItem, setCartItem] = useContext(CartItemContext);
+  const { cartItem, setCartItem } = useContext(CartItemContext);
 
   function removeFromCart() {
     const updatedCart = cartItem.filter((Item) => Item.id !== item.id);

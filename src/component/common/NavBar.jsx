@@ -3,7 +3,7 @@ import { CartOpenContext } from '../../App';
 import React, { useContext } from 'react';
 
 export function NavBar() {
-  const [isCardOpen, setIsCartOpen] = useContext(CartOpenContext);
+  const { isCardOpen, setIsCartOpen } = useContext(CartOpenContext);
 
   return (
     <nav>

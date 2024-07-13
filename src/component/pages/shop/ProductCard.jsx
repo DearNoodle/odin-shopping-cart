@@ -3,7 +3,7 @@ import { CartItemContext } from '../../../App';
 import styles from './card.module.css';
 
 export function ProductCard({ product }) {
-  const [cartItem, setCartItem] = useContext(CartItemContext);
+  const { cartItem, setCartItem } = useContext(CartItemContext);
 
   function handleAddToCart() {
     const productNotExistInCart = cartItem.findIndex((item) => item.id === product.id) === -1;

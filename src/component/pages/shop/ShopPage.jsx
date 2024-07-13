@@ -7,7 +7,7 @@ import { ShoppingCart } from '../../common/ShoppingCart';
 import styles from './shop.module.css';
 
 export function ShopPage() {
-  const [isCardOpen] = useContext(CartOpenContext);
+  const { isCardOpen } = useContext(CartOpenContext);
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const productNum = 20;

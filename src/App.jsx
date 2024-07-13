@@ -13,8 +13,8 @@ export function App() {
   const [cartItem, setCartItem] = useState([]);
 
   return (
-    <CartOpenContext.Provider value={[isCardOpen, setIsCartOpen]}>
-      <CartItemContext.Provider value={[cartItem, setCartItem]}>
+    <CartOpenContext.Provider value={{ isCardOpen, setIsCartOpen }}>
+      <CartItemContext.Provider value={{ cartItem, setCartItem }}>
         <RouterProvider router={router} />
       </CartItemContext.Provider>
     </CartOpenContext.Provider>
