@@ -1,6 +1,7 @@
 import styles from './cart.module.css';
 import React, { useContext } from 'react';
 import { CartOpenContext, CartItemContext } from '../../App';
+import PropTypes from 'prop-types';
 
 export function ShoppingCart() {
   const { setIsCartOpen } = useContext(CartOpenContext);
@@ -89,3 +90,13 @@ function CartItem({ item }) {
     </div>
   );
 }
+
+CartItem.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    amount: PropTypes.number.isRequired,
+  }).isRequired,
+};
